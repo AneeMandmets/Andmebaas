@@ -2,6 +2,7 @@ import mysql.connector
 from mysql.connector import connect, Error
 from tkinter import *
 from kuva import *
+from lisa_hosta import *
 from lisa import *
 
 con = mysql.connector.connect(user="root", password="L4ste4i40pet4j4", host="localhost", database="lilled")
@@ -19,3 +20,5 @@ addbtn=Button(window, text="Lisa lilli", command=lisa, bg="DodgerBlue2", fg="whi
 addbtn.grid(row=5, columnspan=3)
 
 window.mainloop()
+
+
