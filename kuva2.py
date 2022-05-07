@@ -6,13 +6,15 @@ def kuva_koik():
     headings = ['ID', 'NIMI']
 
     con = mysql.connector.connect(host ="localhost",user = "root",password = 'L4ste4i40pet4j4',database='lilled')
-    cursor = con.cursor()
+    cursor = con.cursor()    
     sqlquery = "SELECT idnimi, nimi FROM nimi"
     cursor.execute(sqlquery)
 
     lilled = cursor.fetchall()
+    rows_affected = cursor.rowcount
 
-    layout = [[sg.Table(lilled, headings = headings, justification="center", key="-LILLED-")],]
+    layout = [[sg.Table(lilled, headings = headings, justification="center", key="-LILLED-")],
+    [sg.Text("Lilli kokku:"), sg.Text(rows_affected)],]
     window = sg.Window("Lillede andmebaas", layout, finalize=True)
 
     while True:
@@ -33,8 +35,10 @@ def kuva_hosta():
     cursor.execute(sqlquery)
 
     lilled = cursor.fetchall()
+    rows_affected = cursor.rowcount
 
-    layout = [[sg.Table(lilled, headings = headings, justification="center", key="-LILLED-")],]
+    layout = [[sg.Table(lilled, headings = headings, justification="center", key="-LILLED-")],
+    [sg.Text("Lilli kokku:"), sg.Text(rows_affected)],]
     window = sg.Window("Lillede andmebaas", layout, finalize=True)
 
     while True:
@@ -54,8 +58,10 @@ def kuva_iiris():
     cursor.execute(sqlquery)
 
     lilled = cursor.fetchall()
+    rows_affected = cursor.rowcount
 
-    layout = [[sg.Table(lilled, headings = headings, justification="center", key="-LILLED-")],]
+    layout = [[sg.Table(lilled, headings = headings, justification="center", key="-LILLED-")],
+    [sg.Text("Lilli kokku:"), sg.Text(rows_affected)],]
     window = sg.Window("Lillede andmebaas", layout, finalize=True)
 
     while True:
@@ -75,8 +81,10 @@ def kuva_paevaliilia():
     cursor.execute(sqlquery)
 
     lilled = cursor.fetchall()
+    rows_affected = cursor.rowcount
 
-    layout = [[sg.Table(lilled, headings = headings, justification="center", key="-LILLED-")],]
+    layout = [[sg.Table(lilled, headings = headings, justification="center", key="-LILLED-")],
+    [sg.Text("Lilli kokku:"), sg.Text(rows_affected)],]
     window = sg.Window("Lillede andmebaas", layout, finalize=True)
 
     while True:
@@ -96,8 +104,10 @@ def kuva_liilia():
     cursor.execute(sqlquery)
 
     lilled = cursor.fetchall()
+    rows_affected = cursor.rowcount
 
-    layout = [[sg.Table(lilled, headings = headings, justification="center", key="-LILLED-")],]
+    layout = [[sg.Table(lilled, headings = headings, justification="center", key="-LILLED-")],
+    [sg.Text("Lilli kokku:"), sg.Text(rows_affected)],]
     window = sg.Window("Lillede andmebaas", layout, finalize=True)
 
     while True:
@@ -117,8 +127,10 @@ def kuva_jorjen():
     cursor.execute(sqlquery)
 
     lilled = cursor.fetchall()
+    rows_affected = cursor.rowcount
 
-    layout = [[sg.Table(lilled, headings = headings, justification="center", key="-LILLED-")],]
+    layout = [[sg.Table(lilled, headings = headings, justification="center", key="-LILLED-")],
+    [sg.Text("Lilli kokku:"), sg.Text(rows_affected)],]
     window = sg.Window("Lillede andmebaas", layout, finalize=True)
 
     while True:
@@ -138,8 +150,10 @@ def kuva_tulp():
     cursor.execute(sqlquery)
 
     lilled = cursor.fetchall()
+    rows_affected = cursor.rowcount
 
-    layout = [[sg.Table(lilled, headings = headings, justification="center", key="-LILLED-")],]
+    layout = [[sg.Table(lilled, headings = headings, justification="center", key="-LILLED-")],
+    [sg.Text("Lilli kokku:"), sg.Text(rows_affected)],]
     window = sg.Window("Lillede andmebaas", layout, finalize=True)
 
     while True:
@@ -159,8 +173,10 @@ def kuva_nartsiss():
     cursor.execute(sqlquery)
 
     lilled = cursor.fetchall()
+    rows_affected = cursor.rowcount
 
-    layout = [[sg.Table(lilled, headings = headings, justification="center", key="-LILLED-")],]
+    layout = [[sg.Table(lilled, headings = headings, justification="center", key="-LILLED-")],
+    [sg.Text("Lilli kokku:"), sg.Text(rows_affected)],]
     window = sg.Window("Lillede andmebaas", layout, finalize=True)
 
     while True:
@@ -180,8 +196,10 @@ def kuva_lauk():
     cursor.execute(sqlquery)
 
     lilled = cursor.fetchall()
+    rows_affected = cursor.rowcount
 
-    layout = [[sg.Table(lilled, headings = headings, justification="center", key="-LILLED-")],]
+    layout = [[sg.Table(lilled, headings = headings, justification="center", key="-LILLED-")],
+    [sg.Text("Lilli kokku:"), sg.Text(rows_affected)],]
     window = sg.Window("Lillede andmebaas", layout, finalize=True)
 
     while True:
@@ -201,8 +219,10 @@ def kuva_kanna():
     cursor.execute(sqlquery)
 
     lilled = cursor.fetchall()
+    rows_affected = cursor.rowcount
 
-    layout = [[sg.Table(lilled, headings = headings, justification="center", key="-LILLED-")],]
+    layout = [[sg.Table(lilled, headings = headings, justification="center", key="-LILLED-")],
+    [sg.Text("Lilli kokku:"), sg.Text(rows_affected)],]
     window = sg.Window("Lillede andmebaas", layout, finalize=True)
 
     while True:
@@ -222,8 +242,33 @@ def kuva_ip():
     cursor.execute(sqlquery)
 
     lilled = cursor.fetchall()
+    rows_affected = cursor.rowcount
 
-    layout = [[sg.Table(lilled, headings = headings, justification="center", key="-LILLED-")],]
+    layout = [[sg.Table(lilled, headings = headings, justification="center", key="-LILLED-")],
+    [sg.Text("Lilli kokku:"), sg.Text(rows_affected)],]
+    window = sg.Window("Lillede andmebaas", layout, finalize=True)
+
+    while True:
+        event, values = window.read()
+        if event==sg.WINDOW_CLOSED:
+            break
+        print(event, values)
+
+    window.close()
+
+def kuva_muu():
+    headings = ['ID', 'NIMI']
+
+    con = mysql.connector.connect(host ="localhost",user = "root",password = 'L4ste4i40pet4j4',database='lilled')
+    cursor = con.cursor()
+    sqlquery = "SELECT idnimi, nimi FROM nimi WHERE liik_idliik = '11'"
+    cursor.execute(sqlquery)
+
+    lilled = cursor.fetchall()
+    rows_affected = cursor.rowcount
+
+    layout = [[sg.Table(lilled, headings = headings, justification="center", key="-LILLED-")],
+    [sg.Text("Lilli kokku:"), sg.Text(rows_affected)],]
     window = sg.Window("Lillede andmebaas", layout, finalize=True)
 
     while True:
