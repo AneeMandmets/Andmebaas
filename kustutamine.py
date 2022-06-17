@@ -279,7 +279,7 @@ def kustuta_maitsetaim():
     ]
 
     window = sg.Window("Andmebaas", layout)
-    kuva_rodo()
+    kuva_maitsetaim()
     while True:
         event, values = window.read()
         if event == sg.WIN_CLOSED or event == "Katkesta":
