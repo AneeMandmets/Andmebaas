@@ -1,11 +1,11 @@
 import PySimpleGUI as sg
 import mysql.connector
 from mysql.connector import connect, Error
-from kuva2 import *
-from lisamine import *
-from kustutamine import *
+from kustuta_simp import kustuta_lill
 from muutmine import *
-from fmenuu import *
+from kuva_simp import *
+from kustuta_simp import *
+from lisa_simp import *
 
 def kuvamine():
     layout = [[sg.Text("Lillede andmebaas\nVali lilled, mida kuvada:")],
@@ -35,43 +35,43 @@ def kuvamine():
             kuva_koik()
         elif event == "Hostad":
             window.close()
-            kuva_hosta()
+            kuva_lill(1)
         elif event == "Iirised":
             window.close()
-            kuva_iiris()
+            kuva_lill(2)
         elif event == "Päevaliiliad":
             window.close()
-            kuva_paevaliilia()
+            kuva_lill(3)
         elif event == "Liiliad":
             window.close()
-            kuva_liilia()
+            kuva_lill(4)
         elif event == "Jorjenid":
             window.close()
-            kuva_jorjen()
+            kuva_lill(5)
         elif event == "Tulbid":
             window.close()
-            kuva_tulp()
+            kuva_lill(6)
         elif event == "Nartsissid":
             window.close()
-            kuva_nartsiss()
+            kuva_lill(7)
         elif event == "Laugud":
             window.close()
-            kuva_lauk()
+            kuva_lill(8)
         elif event == "Kannad":
             window.close()
-            kuva_kanna()
+            kuva_lill(9)
         elif event == "Ilupuud ja -põõsad":
             window.close()
-            kuva_ip()
+            kuva_lill(10)
         elif event == "Rododendronid":
             window.close()
-            kuva_rodo()
+            kuva_lill(12)
         elif event == "Maitsetaimed":
             window.close()
-            kuva_maitsetaim()
+            kuva_lill(13)
         elif event == "Muu":
             window.close()
-            kuva_muu()
+            kuva_lill(11)
         elif event == "Liigid":
             window.close()
             kuva_liigid()
@@ -106,43 +106,43 @@ def lisamine():
         event, values = window.read()
         if event == "Hosta":
             window.close()
-            lisa_hosta()
+            lisa_lill(1)
         elif event == "Iiris":
             window.close()
-            lisa_iiris()
+            lisa_lill(2)
         elif event == "Päevaliilia":
             window.close()
-            lisa_paevaliilia()
+            lisa_lill(3)
         elif event == "Liilia":
             window.close()
-            lisa_liilia()
+            lisa_lill(4)
         elif event == "Jorjen":
             window.close()
-            lisa_jorjen()
+            lisa_lill(5)
         elif event == "Tulp":
             window.close()
-            lisa_tulp()
+            lisa_lill(6)
         elif event == "Nartsiss":
             window.close()
-            lisa_nartsiss()
+            lisa_lill(7)
         elif event == "Lauk":
             window.close()
-            lisa_lauk()
+            lisa_lill(8)
         elif event == "Kanna":
             window.close()
-            lisa_kanna()
+            lisa_lill(9)
         elif event == "Ilupuu või -põõsas":
             window.close()
-            lisa_ip()
+            lisa_lill(10)
         elif event == "Rododendron":
             window.close()
-            lisa_rodo()
+            lisa_lill(12)
         elif event == "Maitsetaim":
             window.close()
-            lisa_maitsetaim()
+            lisa_lill(13)
         elif event == "Muu":
             window.close()
-            lisa_muu()
+            lisa_lill(11)
         elif event == "Uus liik":
             window.close()
             lisa_liik()
@@ -176,43 +176,43 @@ def kustutamine():
         event, values = window.read()
         if event == "Hosta":
             window.close()
-            kustuta_hosta()
+            kustuta_lill(1)
         elif event == "Iiris":
             window.close()
-            kustuta_iiris()
+            kustuta_lill(2)
         elif event == "Päevaliilia":
             window.close()
-            kustuta_paevaliilia()
+            kustuta_lill(3)
         elif event == "Liilia":
             window.close()
-            kustuta_liilia()
+            kustuta_lill(4)
         elif event == "Jorjen":
             window.close()
-            kustuta_jorjen()
+            kustuta_lill(5)
         elif event == "Tulp":
             window.close()
-            kustuta_tulp()
+            kustuta_lill(6)
         elif event == "Nartsiss":
             window.close()
-            kustuta_nartsiss()
+            kustuta_lill(7)
         elif event == "Lauk":
             window.close()
-            kustuta_lauk()
+            kustuta_lill(8)
         elif event == "Kanna":
             window.close()
-            kustuta_kanna()
+            kustuta_lill(9)
         elif event == "Ilupuu või -põõsas":
             window.close()
-            kustuta_ip()
+            kustuta_lill(10)
         elif event == "Rododendron":
             window.close()
-            kustuta_rodo()
+            kustuta_lill(12)
         elif event == "Maitsetaim":
             window.close()
-            kustuta_maitsetaim()
+            kustuta_lill(13)
         elif event == "Muu":
             window.close()
-            kustuta_muu()
+            kustuta_lill(11)
         elif event == "Tagasi":
             window.close()
         elif event == sg.WIN_CLOSED:
