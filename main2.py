@@ -1,9 +1,8 @@
 import PySimpleGUI as sg
 import mysql.connector
 from mysql.connector import connect, Error
-from kuva2 import *
 from menyy import *
-from lisamine import *
+from lisa_simp import *
 from muutmine import *
 from otsimine import *
 
@@ -36,4 +35,5 @@ while True:
         break
 
 window.close()
+
 
