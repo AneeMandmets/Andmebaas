@@ -1,8 +1,8 @@
 import PySimpleGUI as sg
 import mysql.connector
 from mysql.connector import connect, Error
-from kuva2 import *
 from menyy import *
+from kuva_simp import *
 
 def muutmine():
     con = mysql.connector.connect(host ="localhost",user = "root",password = 'L4ste4i40pet4j4',database='lilled')
