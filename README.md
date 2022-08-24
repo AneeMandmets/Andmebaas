@@ -11,7 +11,7 @@ https://stackoverflow.com/questions/65656128/pysimplegui-displaying-data-from-a-
 
 
 
-Esimene programm:
+(Ei uuenda enam) Esimene programm:
 https://realpython.com/python-mysql/
 https://dev.mysql.com/doc/connector-python/en/connector-python-example-cursor-select.html
 https://projectgurukul.org/python-library-management-system/
